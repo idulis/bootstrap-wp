@@ -12,3 +12,46 @@ body {
   font-size: 14px;
   color: #333
 }
+
+a:link,
+a:visited{
+  color:#006ec3;
+}
+
+p{
+  line-height:1.65em; /*Establece el interlineado del texto*/
+}
+
+/* GENEERAL LAYOUT */
+div.container{
+  max-width:920px;  /*Establece una anchura maxima de 920px */
+  margin:0 auto;    
+  padding-left:20px;
+  padding-right:20px;
+}
+/* Aarticle.post, separación con una línea dotted para cada una de los post */
+article.post{
+  border-bottom:2px dotted #bbb;
+}
+
+/* last-of-type representa el último elemento hermano de un tipo dado en la lista del elemento hijo de su elemento padre. */
+article.post:last-of-type{
+  border-bottom:none;
+}
+
+/* HEADER */
+.site-header{
+  border-bottom:2px solid #999;
+}
+
+/* FOOTER */
+.site-footer{
+  margin-top:30px;
+  border-top:2px solid #999;
+}
+
+
+
+
+
+
