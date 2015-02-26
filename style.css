@@ -102,8 +102,12 @@ article.post:last-of-type{
   border-right: 1px dotted #BBB;
 }
 
-
-
+/*==========================
+* PAGE LAYOUT
+==========================*/
+article.page h2{
+  font-size: 300%;
+}
 
 
 
