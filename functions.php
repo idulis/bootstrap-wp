@@ -23,4 +23,26 @@ register_nav_menu(array(
 	'footer' => __('Footer Menu')
 ));
 
+
+/* ============================================
+*	Get top ancestor, devuelve la 'página padre' que tenga 'páginas hijas', y con wp_list_pages las muestra
+============================================*/
+function get_top_ancestor_id(){
+
+	global $post;
+
+	/*-- post_parent, devuelve las sub-paginas de una paginas --*/
+	if($post->post_parent){
+		/*-- array_reverse, Devuelve un array con los elementos en orden inverso. --*/
+		/*-- get_post_ancestors, Recupera las 'págninas padres' del 'argumento:$post' basado en el ID DEL MENSAJE--*/
+		$ancestors = array_reverse(get_post_ancestors($post->ID));
+		return $ancestors[0];
+	}
+
+	return $post->ID;
+}
+
+
+
+
 ?>
