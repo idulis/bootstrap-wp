@@ -5,6 +5,17 @@ get_header(); //Corresponde a la creación del fichero "header.php"
    white (have_posts()) : the_post() ; ?>
    
    <article class="post page">
+    <?php 
+     $args = array(
+      'child_of' => $post->ID,
+      'title_li' => ''
+     );
+    ?>
+   
+    <?php wp_list_pages($args); ?>
+   
+   
+   
      // Muestra el título con su enlace.
      <h2><?php the_title(); ?></h2>
      //Muestra el contenido de cada una de las páginas
