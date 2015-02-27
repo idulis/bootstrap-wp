@@ -64,6 +64,9 @@
 			<?php }?>
 		</h5>
 		
+		<?php if(is_page(12)) { ?>
+			Ejemplo para el estudio de la función is_page()
+		<?php }?>
 		
 		<nav class="site-nav">
 		
