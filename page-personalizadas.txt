@@ -1,0 +1,25 @@
+Páginas personalizadas
+Por un lado podemos optar por colocar desde el nombre del archivo la directiva para que se aplique la plantilla a una determinada 
+página ya sea por su ID o por su slug.
+
+page-{id}.php
+page-{slug}.php
+
+De este modo, por ejemplo, si colocamos una plantilla con nombre page-10.php, WordPress intentará aplicar dicha plantilla 
+automáticamente a la página con ID 10. Lo negativo de este método es que no permite aplicar una plantilla en particular a varias 
+páginas de forma práctica, pero suele resultar bastante práctico para aplicar un estilo determinado a una única página.
+Para crear una plantilla que luego se pueda aplicar a diferentes páginas según le indiquemos desde el editor, primero debemos 
+dar al archivo un nombre descriptivo. Nosotros vamos a crear una plantilla de página en donde el contenido abarcará 3/4 del 
+layout y el restante lo usaremos para una sidebar. También removeremos la sidebar horizontal, siendo nuestro objetivo lograr 
+la siguiente estructura.
+
+Ver más:
+http://www.summarg.com/2012/clase-11-la-plantilla-de-pagina/
+
+Para nuestro caso debemos de hacer lo siguiente:
+
+P1. Copiar código del fichero page.php
+P2. Pegarlo en otro fichero page-plantilla.php
+  Donde pone "plantilla" podría ser una ID, o un slug (nombre de la página)
+P3. En page-plantilla.php hacer las modificaciones necesarias y guardar.
+P4 Ahora cuando creamos una página nuevo podemos seleccionar esta plantillas.
