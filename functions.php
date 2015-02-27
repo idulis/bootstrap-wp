@@ -42,7 +42,17 @@ function get_top_ancestor_id(){
 	return $post->ID;
 }
 
+/* ============================================
+*	Get top ancestor, Tiene hijos la página, retorna un número
+============================================*/
 
+function has_children(){
 
+	global $post;
+
+	$pages = get_pages('child_of=' . $post->ID);
+
+	return count($pages);
+}
 
 ?>
