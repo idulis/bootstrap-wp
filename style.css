@@ -192,7 +192,22 @@ div.info-box p{
 	cursor: default;
 }
 
+/*==========================
+* index.php: meta data, date(),  
+==========================*/
+.post h2 {
+	margin-bottom:0;
+}
 
+p.post-info {
+	font-size: 87%;
+	color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: #999;
+}
 
 
 
