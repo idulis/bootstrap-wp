@@ -7,7 +7,7 @@ get_header(); //Corresponde a la creación del fichero "header.php"
    <article class="post page">
     <?php 
      $args = array(
-      'child_of' => $post->ID,
+      'child_of' => get_top_ancestor_id(),
       'title_li' => ''
      );
     ?>
