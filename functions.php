@@ -18,7 +18,7 @@ add_action('wp_enqueue_scripts', 'learningWordPress_resources');
 *	register_nav_menu()
 *	Esta función revisa si la función register_nav_menus() existe en tu versión actual de WordPress y luego l a usa para registrar una gran cantidad de menús. Puedes agregar uno, dos o cualquier otro número de menús que quieras que usen esta función.
 ============================================*/
-register_nav_menu(array(
+register_nav_menus(array(
 	'primary' => __('Primary Menu'),
 	'footer' => __('Footer Menu')
 ));
