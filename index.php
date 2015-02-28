@@ -3,7 +3,7 @@
 get_header(); //Corresponde a la creación del fichero "header.php"
  if(have_posts()) :
    //Recorrido de todos los post que se vayan añadiendo
-   white (have_posts()) : the_post() ; ?>
+   while (have_posts()) : the_post() ; ?>
    
    <article class="post">
      // Muestra el título con su enlace.
