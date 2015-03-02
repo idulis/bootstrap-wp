@@ -6,9 +6,9 @@ get_header(); //Corresponde a la creación del fichero "header.php"
    while (have_posts()) : the_post() ; ?>
    
    <article class="post">
-     // Muestra el título con su enlace.
-     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-     //Muestra el contenido de cada una de las páginas
+     <!-- Muestra el título con su enlace. -->
+     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <!-- Muestra el contenido de cada una de las páginas -->
      
      <p class="post-info">
       <?php the_time('Y  j, g:i a'); ?> |
@@ -23,8 +23,10 @@ get_header(); //Corresponde a la creación del fichero "header.php"
       $output = '';
       
       if($categories){
-       foreach($categoies as $category){
-        $output .= '<a href=" '. get_category_link($category->term_id) .' ">' . $category->cat_name . '</a>' . $separator;  
+       foreach($categories as $category){
+        //$output .= '<a href=" '. get_category_link($category->term_id) .' ">' . $category->cat_name . '</a>' . $separator;  
+        $output .= $category->cat_name . $separator;  
+
        }
        
        echo trim($output, $separator);
