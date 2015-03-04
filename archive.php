@@ -26,7 +26,7 @@ get_header(); //Corresponde a la creación del fichero "header.php"
   
   ?></h2>
    //Recorrido de todos los post que se vayan añadiendo
-   white (have_posts()) : the_post() ; ?>
+   while (have_posts()) : the_post() ; ?>
    
    <article class="post">
      // Muestra el título con su enlace.
@@ -46,7 +46,7 @@ get_header(); //Corresponde a la creación del fichero "header.php"
       $output = '';
       
       if($categories){
-       foreach($categoies as $category){
+       foreach($categories as $category){
         $output .= '<a href=" '. get_category_link($category->term_id) .' ">' . $category->cat_name . '</a>' . $separator;  
        }
        
